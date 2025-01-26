@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* chatbot  related */
+.chatbot {
+  max-width: 600px;
+  margin: 50px auto; /* Center horizontally and add some space from the top */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; /* Stack messages and input vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.messages {
+  width: 100%; /* Ensure messages take up full width of the chatbot */
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input-area {
+  width: 100%; /* Full width for the input area */
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1; /* Allow the input to expand and take up remaining space */
+  padding: 10px; /* Increase padding for better visibility */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.input-area button {
+  padding: 10px 20px; /* Ensure the button matches the input field size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Match button text size with input field */
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .input-area {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 5px;
+  }
+
+  .input-area input,
+  .input-area button {
+    width: 100%; /* Full width for both input and button */
+  }
+}
+
+/* chatbot  related */
